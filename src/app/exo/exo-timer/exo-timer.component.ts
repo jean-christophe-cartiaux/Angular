@@ -29,7 +29,7 @@ export class ExoTimerComponent {
 
 
       this.sec = (this.sec+1);
-    },1);
+    },1000);
 
   }
   stop(){
