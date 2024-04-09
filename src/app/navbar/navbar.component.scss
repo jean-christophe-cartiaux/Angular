@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    li{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      a{
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+
+
+        &:hover{
+          color: darkgreen;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

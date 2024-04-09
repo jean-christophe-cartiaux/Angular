@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>{{title}}</h2>
+
+  <div class="bindings-example">
+      <h4>Binding One-Way</h4>
+      <p>{{bindingOneWay}}</p>
+      <p [innerHTML]="bindingOneWayAvecComposanteHTML"></p>
+      <h4>Bindings Two-Ways</h4>
+    <input type="text" [(ngModel)]="bindingTwoWays">
+    <p>{{bindingTwoWays}}</p>
+    <h4>Binding d'évenement</h4>
+    <div class="buttons">
+      <button (click)="eventBinding()">Clique moi pour activer mon évenement</button>
+      <button [class.changeBgColor]="adaptativeClass"(click)="classBinding()" >Clique moi pour changer dynamiquement ma classe CSS !</button>
+    </div>
+    <h4>Binding d'attribut</h4>
+    <div class="buttons">
+      <button (click)="attributeBinding()" [disabled]="diasableAttribute" >Clique moi pour me désactiver !</button>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>{{title}}</h2>
+
+  <div>
+    <h4>Quelque exemple de pipe </h4>
+    <p style="front-weight:bolder; text-decoration:underline;">En majuscule</p>
+    <p>{{ stringEnMajuscule | uppercase}}</p>
+
+    <p style="front-weight:bolder; text-decoration:underline;">En minuscule</p>
+    <p>{{ stringEnMinuscule |lowercase}}</p>
+
+    <p style="front-weight:bolder; text-decoration:underline;">first majuscule</p>
+    <p>{{ firstEnMajuscule |titlecase}}</p>
+
+    <p style="front-weight:bolder; text-decoration:underline;">format dat diff </p>
+    <p>on est le : {{dateDuJour|date:'short'}}</p>
+    <p>on est le : {{dateDuJour|date:'medium'}}</p>
+    <p>on est le : {{dateDuJour|date:'long'}}</p>
+
+    <p style="front-weight:bolder; text-decoration:underline;">Ajout du sigle monétaire</p>
+    <p>{{ argentPlease |currency:'EUR'}}</p>
+    <p style="front-weight:bolder; text-decoration:underline;">Transformer un nombre en lettre et en majuscule</p>
+    <p>{{5 | custom | uppercase}}</p>
+  </div>
+</div>

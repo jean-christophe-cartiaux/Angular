@@ -1,0 +1,21 @@
+.bindings-example{
+  h4{
+    margin-top:5rem;
+  }
+  input{
+    width:35rem;
+  }
+  .changeBgColor{
+    background:chartreuse;
+  }
+  .buttons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    button{
+      width:10rem;
+      height:4.5rem;
+    }
+  }
+}
