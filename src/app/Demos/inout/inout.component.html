@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>
+    {{title}}
+  </h2>
+
+  <div>
+        <p style="font-weight: bolder; text-decoration: underline;">
+            Information sous le nom 'info' envoyé à l'enfant pour affichage
+        </p>
+    <app-child info="Hello je suis envoyé depuis le composant parant(inout)"></app-child>
+    <p style="font-weight: bolder; text-decoration: underline;">
+      Templete HTML envoyé directement dans le body de l'enfant qu'il va récupérer grâce au selecteur ng-content
+    </p>
+    <app-child >
+      <h4>Template envoyer a l'enfant</h4>
+      <p>je suis le super template que le parent t'envoi et que tu va afficher avec ng-content</p>
+    </app-child>
+
+    <p style="font-weight: bolder; text-decoration: underline;">
+      Déclencher un événement qui va être envoyer au parent depuis l'enfant après traitement de l'information via l'output
+    </p>
+    <input type="number" [(ngModel)]="num1">
+    +
+    <input type="number" [(ngModel)]="num2">
+    <app-child [num1]="num1" [num2]="num2" (calculToutCa)="calculateResult($event)"></app-child>
+    <p>{{result}}</p>
+
+  </div>
+
+</div>

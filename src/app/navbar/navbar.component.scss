@@ -2,15 +2,21 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  .nav-list{
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
   ul{
     display: flex;
     flex-direction: row;
     gap: 4rem;
     li{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      list-style: none;
+      position:relative;
+      margin:20px;
       a{
         font-size: 1.25rem;
         font-weight: bold;
@@ -21,6 +27,25 @@ nav {
         &:hover{
           color: darkgreen;
           text-decoration: underline;
+        }
+      }
+      ul.subnav-list{
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: gray;
+        padding: 0;
+        box-shadow: 0 8px 16px 0 black;
+        li{
+          display: block;
+          padding: 10px;
+          text-align: center;
+          &:hover{
+          background-color: chartreuse;
+          }
         }
       }
     }
