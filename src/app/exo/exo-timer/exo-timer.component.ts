@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CdTimerModule } from 'angular-cd-timer';
+
 @Component({
   selector: 'app-exo-timer',
   standalone: true,
