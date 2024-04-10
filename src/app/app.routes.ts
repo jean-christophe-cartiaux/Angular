@@ -5,6 +5,8 @@ import {ExoTimerComponent} from "./exo/exo-timer/exo-timer.component";
 import {DirectivesComponent} from "./Demos/directives/directives.component";
 import {InoutComponent} from "./Demos/inout/inout.component";
 import {PanierComponent} from "./exo/panier/panier.component";
+import {CardComponent} from "./Demos/leaderboard/card/card.component";
+import {CardListComponent} from "./Demos/leaderboard/card-list/card-list.component";
 
 export const routes: Routes = [
 /*  {path:'demos/bindings',component:BindingsComponent},
@@ -16,6 +18,7 @@ export const routes: Routes = [
       {path:'times',component:ExoTimerComponent},
       {path:'directives',component:DirectivesComponent},
       {path:'inout',component:InoutComponent},
+          {path:'character',component:CardListComponent}
     ]},
   {path:'exos',children:[
       {path: 'timer', component: ExoTimerComponent},

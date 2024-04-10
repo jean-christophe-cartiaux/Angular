@@ -39,7 +39,12 @@ export class NavbarComponent {
                 title:'Bindings',
                 url: '/demos/bindings',
                 isVisible:false,
-              }
+              },
+                {
+                    title:'Character',
+                    url: '/demos/character',
+                    isVisible:false,
+                }
             ]
       },
       {

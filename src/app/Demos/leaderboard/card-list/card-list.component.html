@@ -1,0 +1,12 @@
+<div class="container">
+    @for (character of listTopElevenCharacters; track character){
+        <app-card
+        [id]="character.id"
+        [name]="character.name"
+        [ranked]="character.ranked"
+        [win]="character.win"
+        [defeat]="character.defeat"
+        (banCharacter)="banCharacter($event)"></app-card>
+    }
+
+</div>

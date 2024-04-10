@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/800px-Angular_full_color_logo.svg.png">
+    </div>
+    <div>
+        <h3>
+            N° {{ranked}} - Nom: {{name}}
+        </h3>
+        <p>
+            Nombre de victoire : {{win}}
+        </p>
+        <p>
+            Nombre de défaite : {{defeat}}
+        </p>
+    </div>
+
+    <div>
+        <button (click)="ban(id)">
+            Supprimer ce personnage
+        </button>
+    </div>
+
+</div>

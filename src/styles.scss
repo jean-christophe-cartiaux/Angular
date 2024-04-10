@@ -15,6 +15,14 @@ html,body{
 .bold{
   font-weight: bolder;
 }
+.sContainer{
+  border: solid;
+  border-color: darkgreen;
+  .pContainer{
+    background-color: chartreuse;
+  }
+}
+
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

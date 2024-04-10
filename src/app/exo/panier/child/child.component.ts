@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input ,Output,OnChanges,SimpleChanges,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class ChildComponent {
 
+
+    @Output() banCharacter:EventEmitter<number> = new EventEmitter<number>();
+    @Input() id:number=0;
+    @Input() nom:string="";
+    @Input() combien:number=0;
+    ban(idCharacter:number){
+        this.banCharacter.emit(idCharacter);
+    }
 }
