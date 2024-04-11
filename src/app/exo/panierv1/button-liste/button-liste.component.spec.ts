@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChildComponent } from './child.component';
+import { ButtonListeComponent } from './button-liste.component';
 
-describe('ChildComponent', () => {
-  let component: ChildComponent;
-  let fixture: ComponentFixture<ChildComponent>;
+describe('ButtonListeComponent', () => {
+  let component: ButtonListeComponent;
+  let fixture: ComponentFixture<ButtonListeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ChildComponent]
+      imports: [ButtonListeComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ChildComponent);
+    fixture = TestBed.createComponent(ButtonListeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

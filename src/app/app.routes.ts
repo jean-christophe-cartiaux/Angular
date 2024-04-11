@@ -4,9 +4,9 @@ import {PipesComponent} from "./Demos/pipes/pipes.component";
 import {ExoTimerComponent} from "./exo/exo-timer/exo-timer.component";
 import {DirectivesComponent} from "./Demos/directives/directives.component";
 import {InoutComponent} from "./Demos/inout/inout.component";
-import {PanierComponent} from "./exo/panier/panier.component";
-import {CardComponent} from "./Demos/leaderboard/card/card.component";
+
 import {CardListComponent} from "./Demos/leaderboard/card-list/card-list.component";
+import {ListeArticleComponent} from "./exo/panierv1/liste-article/liste-article.component";
 
 export const routes: Routes = [
 /*  {path:'demos/bindings',component:BindingsComponent},
@@ -22,7 +22,8 @@ export const routes: Routes = [
     ]},
   {path:'exos',children:[
       {path: 'timer', component: ExoTimerComponent},
-      {path:'panier',component:PanierComponent}
+
+      {path:'panierv1',component:ListeArticleComponent}
 
     ]}
 ];

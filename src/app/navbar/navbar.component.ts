@@ -56,10 +56,11 @@ export class NavbarComponent {
             title:'Chrono',
             url: '/exos/timer',
             isVisible:false,
-          },{
-            title:'Panier',
-            url: '/exos/panier',
-            isVisible:false,
+          },
+          {
+              title:'Panier V1',
+              url: '/exos/panierv1',
+              isVisible:false,
           }
         ]
       }
