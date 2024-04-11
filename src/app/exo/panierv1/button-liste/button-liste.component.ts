@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import{ButtonModule} from "primeng/button";
-import {IArticle} from "../liste-article/liste-article.component";
+import {IArticle} from "./liste-article/liste-article.component";
 
 @Component({
   selector: 'app-button-liste',

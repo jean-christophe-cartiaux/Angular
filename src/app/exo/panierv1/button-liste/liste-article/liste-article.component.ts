@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {v4 as uuidv4} from'uuid'
 import{FormsModule} from '@angular/forms';
 import{CurrencyPipe,DatePipe} from "@angular/common";
-import{ButtonListeComponent} from "../button-liste/button-liste.component";
+import{ButtonListeComponent} from "../button-liste.component";
 import{CardModule} from "primeng/card";
 import{ButtonModule} from "primeng/button";
 import{InputTextModule} from "primeng/inputtext";

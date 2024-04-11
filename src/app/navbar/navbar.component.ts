@@ -44,6 +44,16 @@ export class NavbarComponent {
                     title:'Character',
                     url: '/demos/character',
                     isVisible:false,
+                },
+                {
+                    title:'ServiceOne',
+                    url: '/demos/demo-service-one',
+                    isVisible:false,
+                },
+                {
+                    title:'ServiceTwo',
+                    url: '/demos/demo-service-two',
+                    isVisible:false,
                 }
             ]
       },
