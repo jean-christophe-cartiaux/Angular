@@ -4,5 +4,8 @@
     </h2>
     <form (ngSubmit)="login()">
         <input pInputText name="username" [(ngModel)]="username">
+        <input pInputText type="password" name="password" [(ngModel)]="password">
+
+        <button type="submit">Login</button>
     </form>
 </div>
