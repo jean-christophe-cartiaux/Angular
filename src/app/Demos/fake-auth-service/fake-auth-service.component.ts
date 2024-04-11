@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {AuthService} from "./auth.service";
 import {InputTextModule} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-fake-auth-service',
@@ -16,12 +17,13 @@ export class FakeAuthServiceComponent {
 username:string='';
 password:string='';
 
-constructor(private _authService:AuthService){}
+constructor(private _authService:AuthService,private _router:Router) { }
 
 
     login(){
     if(this._authService.login(this.username,this.password)){
         console.log('Tu es connecté')
+        this._router.navigate(['/demos/demo-service-one']);
     }else{
         console.log('Tu n\'es pas connecté');
     }
