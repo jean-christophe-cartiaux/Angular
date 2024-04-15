@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MessageService {
-private message: string ='Ma fucking tête va exploser , vite le gras du BK'
+ message: string ='Ma fucking tête va exploser , vite le gras du BK'
   constructor() { }
 
     getMessage():string{

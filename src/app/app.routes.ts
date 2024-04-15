@@ -4,11 +4,12 @@ import {PipesComponent} from "./Demos/pipes/pipes.component";
 import {ExoTimerComponent} from "./exo/exo-timer/exo-timer.component";
 import {DirectivesComponent} from "./Demos/directives/directives.component";
 import {InoutComponent} from "./Demos/inout/inout.component";
-
 import {CardListComponent} from "./Demos/leaderboard/card-list/card-list.component";
 import {ListeArticleComponent} from "./exo/panierv1/button-liste/liste-article/liste-article.component";
 import {DemoServiceComponent} from "./Demos/demo-service/demo-service.component";
 import {FakeAuthServiceComponent} from "./Demos/fake-auth-service/fake-auth-service.component";
+import {TasksComponent} from "./exo/tasks/tasks.component";
+
 
 export const routes: Routes = [
 /*  {path:'demos/bindings',component:BindingsComponent},
@@ -29,7 +30,7 @@ export const routes: Routes = [
     ]},
   {path:'exos',children:[
       {path: 'timer', component: ExoTimerComponent},
-
+      {path:'tasks',component: TasksComponent},
       {path:'panierv1',component:ListeArticleComponent}
 
     ]}

@@ -71,6 +71,11 @@ export class NavbarComponent {
               title:'Panier V1',
               url: '/exos/panierv1',
               isVisible:false,
+          },
+          {
+            title:'Task',
+            url: '/exos/tasks',
+            isVisible:false,
           }
         ]
       }
