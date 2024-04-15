@@ -1,0 +1,66 @@
+<div class="container">
+  <h2>{{title}}</h2>
+
+  <div>
+    <p style="font-weight: bolder; text-decoration: underline">
+      On récupère l'input via un formControl, que l'on va log dans la console
+
+    </p>
+    <form (submit)="onControlSubmit($event)">
+      <input type="text" [formControl]="control">
+      <button type="submit"> Submit le FormControl</button>
+    </form>
+  </div>
+
+  <div>
+    <p style="font-weight: bolder; text-decoration: underline">
+      On récupère l'input via un formGroup, que l'on va log dans la console
+    </p>
+
+    <form (submit)="onGroupSubmit($event)" [formGroup]="group">
+      <input type="text" formControlName="prenom" placeholder="Prenom"><br>
+      <input type="text" formControlName="age" placeholder="Age">
+      <button type="submit"> Submit le FormGroup</button>
+    </form>
+  </div>
+  <div>
+    <p style="font-weight: bolder; text-decoration: underline">
+      On récupère l'input via un formArray, que l'on va log dans la console
+    </p>
+
+    <form (submit)="onArraySubmit($event)" [formGroup]="array">
+      <button (click) = "addControl()">Ajout d'un nouvel input</button>
+      <div formArrayName="array">
+      @for (control of getArrayForm().controls; track control; let i = $index){
+        <div>
+          <p>
+            {{i}}
+            <input type="text"[formControlName]="i">
+          </p>
+        </div>
+      }
+      </div>
+      <button type="submit"> Submit le formArray</button>
+    </form>
+  </div>
+  <div>
+    <p style="font-weight: bolder; text-decoration: underline">
+      On Vérifie que les validations se font bien correctement
+    </p>
+    <form (submit)="onGroupSubmit($event)" [formGroup]="group">
+      <input type="text" formControlName="prenom">
+      @if (!group.get('prenom')?.valid && !group.get('prenom')?.untouched){
+        <p>Ce champ est obligatoire</p>
+      }
+      <input type="text" formControlName="age">
+      @if (!group.get('age')?.valid && !group.get('age')?.untouched){
+        <p>Ce champ est obligatoire CONNARD </p>
+      }
+      @if (group.get('prenom')?.valid && group.get('age')?.valid){
+        <button type="submit">Submit avec validation</button>
+      } @else {
+        <button type="submit" disabled> Submit avec validation</button>
+      }
+    </form>
+  </div>
+</div>

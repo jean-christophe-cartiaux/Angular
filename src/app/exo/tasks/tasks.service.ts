@@ -11,24 +11,24 @@ export interface ITask {
   providedIn: 'root'
 })
 export class TasksService {
-  private tasks: ITask[] = [];
+  private _tasks: ITask[] = [];
 
   constructor() { }
 
   getTasks(): ITask[] {
-    return this.tasks;
+    return this._tasks;
   }
 
   addTask(task: ITask): void {
-    this.tasks.push(task);
+    this._tasks.push(task);
   }
 
   removeTask(id: string): void {
-     this.tasks = this.tasks.filter(task => task.id !== id)
+     this._tasks = this._tasks.filter(task => task.id !== id)
   }
 
   completeTask(id: string){
-    this.tasks = this.tasks.map((task: ITask) => {
+    this._tasks = this._tasks.map((task: ITask) => {
       if (task.id === id) {
         return{...task, completed: true}
       }

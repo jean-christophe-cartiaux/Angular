@@ -54,7 +54,12 @@ export class NavbarComponent {
                     title:'ServiceTwo',
                     url: '/demos/demo-service-two',
                     isVisible:false,
-                }
+                },
+              {
+                title:'Form',
+                url: '/demos/forms',
+                isVisible:false,
+              }
             ]
       },
       {
@@ -75,6 +80,11 @@ export class NavbarComponent {
           {
             title:'Task',
             url: '/exos/tasks',
+            isVisible:false,
+          },
+          {
+            title:'Connexion',
+            url: '/exos/connexion',
             isVisible:false,
           }
         ]

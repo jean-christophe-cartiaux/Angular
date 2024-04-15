@@ -9,6 +9,9 @@ import {ListeArticleComponent} from "./exo/panierv1/button-liste/liste-article/l
 import {DemoServiceComponent} from "./Demos/demo-service/demo-service.component";
 import {FakeAuthServiceComponent} from "./Demos/fake-auth-service/fake-auth-service.component";
 import {TasksComponent} from "./exo/tasks/tasks.component";
+import {FormulairesComponent} from "./Demos/formulaires/formulaires.component";
+import {ConnexionComponent} from "./exo/connexion/connexion.component";
+import {ProfilComponent} from "./exo/profil/profil.component";
 
 
 export const routes: Routes = [
@@ -24,6 +27,8 @@ export const routes: Routes = [
       {path:'character',component:CardListComponent},
       {path:'demo-service-one',component: DemoServiceComponent},
       {path:'demo-service-two',component: FakeAuthServiceComponent},
+      {path:'forms',component: FormulairesComponent},
+
 
 
 
@@ -31,7 +36,9 @@ export const routes: Routes = [
   {path:'exos',children:[
       {path: 'timer', component: ExoTimerComponent},
       {path:'tasks',component: TasksComponent},
-      {path:'panierv1',component:ListeArticleComponent}
+      {path:'panierv1',component:ListeArticleComponent},
+      {path:'connexion',component:ConnexionComponent},
+      {path:'profil',component: ProfilComponent},
 
     ]}
 ];
