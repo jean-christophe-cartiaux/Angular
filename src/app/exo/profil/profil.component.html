@@ -1,1 +1,16 @@
-<p>profil works!</p>
+<div class="container">
+  <p style="font-weight: bolder; text-decoration: underline">
+    Remplis les chant pour ton CV
+  </p>
+
+  <form (submit)="onGroupSubmit($event)" [formGroup]="group">
+    <input type="text" formControlName="nom" placeholder="Nom"><br>
+    <input type="text" formControlName="prenom" placeholder="Prenom"><br>
+    <input type="text" formControlName="email" placeholder="Email"><br>
+    <input type="text" formControlName="pseudo" placeholder="Pseudo"><br>
+    <input type="text" formControlName="titreFonction" placeholder="TitreFonction"><br>
+    <input type="text" formControlName="description" placeholder="description"><br>
+
+    <button type="submit"> Submit le FormGroup</button>
+  </form>
+</div>

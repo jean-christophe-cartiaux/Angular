@@ -18,14 +18,14 @@ export class FormulairesComponent {
     array:FormGroup;
 
     constructor(private _formBuilder:FormBuilder) {
-      this.control= this._formBuilder.control(null,[Validators.required]);
-      this.group=this._formBuilder.group({
-        prenom:[null,Validators.required],
-        age:[null,Validators.required],
+      this.control = this._formBuilder.control(null, [Validators.required]);
+      this.group = this._formBuilder.group({
+        prenom: [null, Validators.required],
+        age: [null, Validators.required],
 
       })
-      this.array=this._formBuilder.group({
-        array:this._formBuilder.array([this._formBuilder.control(null,[Validators.required])])
+      this.array = this._formBuilder.group({
+        array: this._formBuilder.array([this._formBuilder.control(null, [Validators.required])])
       })
     }
     onControlSubmit(e:Event){
