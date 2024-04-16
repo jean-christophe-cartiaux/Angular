@@ -12,6 +12,7 @@ import {TasksComponent} from "./exo/tasks/tasks.component";
 import {FormulairesComponent} from "./Demos/formulaires/formulaires.component";
 import {ConnexionComponent} from "./exo/connexion/connexion.component";
 import {ProfilComponent} from "./exo/profil/profil.component";
+import {HttpComponent} from "./Demos/http/http.component";
 
 
 export const routes: Routes = [
@@ -28,6 +29,7 @@ export const routes: Routes = [
       {path:'demo-service-one',component: DemoServiceComponent},
       {path:'demo-service-two',component: FakeAuthServiceComponent},
       {path:'forms',component: FormulairesComponent},
+      {path:'http',component:HttpComponent},
 
 
 

@@ -47,6 +47,8 @@
     <p style="font-weight: bolder; text-decoration: underline">
       On Vérifie que les validations se font bien correctement
     </p>
+
+    /* a maitre dans le type script pour valider ou non le formulair */
     <form (submit)="onGroupSubmit($event)" [formGroup]="group">
       <input type="text" formControlName="prenom">
       @if (!group.get('prenom')?.valid && !group.get('prenom')?.untouched){

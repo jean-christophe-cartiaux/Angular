@@ -59,6 +59,11 @@ export class NavbarComponent {
                 title:'Form',
                 url: '/demos/forms',
                 isVisible:false,
+              },
+              {
+                title:'Http',
+                url: '/demos/http',
+                isVisible:false,
               }
             ]
       },
